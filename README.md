@@ -1,87 +1,96 @@
-FURIA Fan ID
-FURIA Fan ID é uma aplicação web desenvolvida para coletar e gerenciar informações de fãs da FURIA Esports. A plataforma permite que fãs criem perfis, compartilhem seus interesses em jogos e se conectem com a comunidade da FURIA.
+# FURIA Fan ID
 
-Funcionalidades
-Gerenciamento de Informações Pessoais: Coleta de informações básicas e dados de contato dos usuários
+**FURIA Fan ID** é uma aplicação web desenvolvida para coletar e gerenciar informações de fãs da FURIA Esports.  
+A plataforma permite que fãs criem perfis, compartilhem seus interesses em jogos e se conectem com a comunidade da FURIA.
 
-Interesses em Jogos: Registro de jogos favoritos, plataformas utilizadas e preferências de visualização de esports
+## 🔧 Funcionalidades
 
-Fandom da FURIA: Coleta de informações sobre a conexão dos fãs com os times e jogadores da FURIA
+- **Gerenciamento de Informações Pessoais**: Coleta de informações básicas e dados de contato dos usuários  
+- **Interesses em Jogos**: Registro de jogos favoritos, plataformas utilizadas e preferências de visualização de esports  
+- **Fandom da FURIA**: Coleta de informações sobre a conexão dos fãs com os times e jogadores da FURIA  
+- **Envio de Documentos**: Funcionalidade básica de upload de documentos (simulação de verificação)  
+- **Integração com Redes Sociais**: Suporte a conexões OAuth com diversas plataformas (em desenvolvimento)
 
-Envio de Documentos: Funcionalidade básica de upload de documentos (apenas simulação de verificação)
+## 🧪 Tecnologias Utilizadas
 
-Integração com Redes Sociais: Suporte a conexões OAuth com diversas plataformas (em desenvolvimento)
+- React 18  
+- TypeScript  
+- Vite  
+- Tailwind CSS  
+- Supabase (Banco de Dados & Armazenamento)  
+- Lucide React (Ícones)
 
-Tecnologias Utilizadas
-React 18
+## ✅ Pré-requisitos
 
-TypeScript
+- Node.js 18 ou superior  
+- npm ou yarn  
+- Conta no Supabase
 
-Vite
+## 🚀 Primeiros Passos
 
-Tailwind CSS
+1. **Clone o repositório:**
 
-Supabase (Banco de Dados & Armazenamento)
 
-Lucide React (Ícones)
+2. **Instale as dependências:**
 
-Pré-requisitos
-Node.js 18 ou superior
+```bash
+npm install
+# ou
+yarn
+```
 
-npm ou yarn
+3. **Configure as variáveis de ambiente:**
 
-Conta no Supabase
+Crie um arquivo `.env` na raiz do projeto com suas credenciais do Supabase:
 
-Primeiros Passos
-1.Clone o repositório:
+```env
+VITE_SUPABASE_URL=sua_url_supabase
+VITE_SUPABASE_ANON_KEY=sua_chave_anonima_supabase
+```
 
-2.Instale as dependências:
-bash
-   npm install
+4. **Inicie o servidor de desenvolvimento:**
 
-3.Configure as variáveis de ambiente:
-Crie um arquivo .env na raiz do projeto com suas credenciais do Supabase:
-   VITE_SUPABASE_URL=sua_url_supabase
-   VITE_SUPABASE_ANON_KEY=sua_chave_anonima_supabase
+```bash
+npm run dev
+```
 
-4.Inicie o servidor de desenvolvimento:
-bash
-   npm run dev
+## 📁 Estrutura do Projeto
 
-Estrutura do Projeto
+```
 ├── src/
-│   ├── components/     # Componentes React
-│   ├── lib/            # Funções utilitárias e configurações
-│   ├── types/          # Definições de tipos TypeScript
-│   └── App.tsx         # Componente principal da aplicação
-├── public/             # Arquivos estáticos
+│   ├── components/        # Componentes React
+│   ├── lib/               # Funções utilitárias e configurações
+│   ├── types/             # Definições de tipos TypeScript
+│   └── App.tsx            # Componente principal da aplicação
+├── public/                # Arquivos estáticos
 └── supabase/
-    ├── functions/      # Funções Edge
-    └── migrations/     # Migrações do banco de dados
+    ├── functions/         # Funções Edge
+    └── migrations/        # Migrações do banco de dados
+```
 
-Observações Importantes
-Verificação de Documentos: O sistema de verificação de documentos é atualmente uma simulação e não realiza validações reais
+## ⚠️ Observações Importantes
 
-Integração com Redes Sociais: As conexões OAuth estão implementadas, mas ainda não funcionam completamente. No momento, o sistema apenas demonstra o fluxo de conexão, sem buscar dados reais
+- **Verificação de Documentos**:  
+  O sistema de verificação de documentos é atualmente uma simulação e não realiza validações reais.
 
-Armazenamento de Dados: Todos os dados dos usuários são armazenados no Supabase, com políticas de segurança adequadas
+- **Integração com Redes Sociais**:  
+  As conexões OAuth estão implementadas, mas ainda não funcionam completamente. No momento, o sistema apenas demonstra o fluxo de conexão, sem buscar dados reais.
 
-Esquema do Banco de Dados
+- **Armazenamento de Dados**:  
+  Todos os dados dos usuários são armazenados no Supabase, com políticas de segurança adequadas.
+
+## 🧩 Esquema do Banco de Dados
+
 A aplicação utiliza as seguintes tabelas principais:
 
-fan_profiles: Informações básicas do usuário
+- `fan_profiles`: Informações básicas do usuário  
+- `gaming_interests`: Preferências e histórico de jogos  
+- `furia_fandom`: Informações específicas sobre a FURIA  
+- `documents`: Registros de upload de documentos  
+- `social_media_accounts`: Registros de conexões com redes sociais  
 
-gaming_interests: Preferências e histórico de jogos
+## 🙌 Agradecimentos
 
-furia_fandom: Informações específicas sobre a FURIA
-
-documents: Registros de upload de documentos
-
-social_media_accounts: Registros de conexões com redes sociais
-
-Agradecimentos
-FURIA Esports pela inspiração
-
-Supabase pela infraestrutura de backend
-
-Comunidades do React e Vite
+- FURIA Esports pela inspiração  
+- Supabase pela infraestrutura de backend  
+- Comunidades do React e Vite
