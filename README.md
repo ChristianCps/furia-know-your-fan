@@ -3,6 +3,8 @@
 **FURIA Fan ID** é uma aplicação web desenvolvida para coletar e gerenciar informações de fãs da FURIA Esports.  
 A plataforma permite que fãs criem perfis, compartilhem seus interesses em jogos e se conectem com a comunidade da FURIA.
 
+🔗 [Acesse o site Know Your Fan Furia](https://know-your-fan-furia.netlify.app)
+
 ## 🔧 Funcionalidades
 
 - **Gerenciamento de Informações Pessoais**: Coleta de informações básicas e dados de contato dos usuários  
